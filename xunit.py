@@ -58,4 +58,4 @@ class TestCaseTest(TestCase):
 
 TestCaseTest("testTemplateMethod").run()
 TestCaseTest("testResult").run()
-TestCaseTest("testFailResult").run()
+# TestCaseTest("testFailResult").run()
