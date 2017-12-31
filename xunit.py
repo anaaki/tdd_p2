@@ -26,8 +26,11 @@ class WasRun(TestCase):
         self.log = self.log + "tearDown "
 
 class TestResult:
+    def __init__(self):
+        self.runCount = 1
+
     def summary(self):
-        return '1 run, 0 failed'
+        return '{} run, 0 failed'.format(self.runCount)
 
 class TestCaseTest(TestCase):
     def testTemplateMethod(self):
