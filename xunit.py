@@ -1,7 +1,7 @@
 
 class TestCase:
     def __init__(self, name):
-        print(name)
+        # print(name)
         self.name = name
 
     def setUp(self):
@@ -69,7 +69,7 @@ class TestCaseTest(TestCase):
         result.testFailed()
         assert("1 run, 1 failed" == result.summary())
 
-TestCaseTest("testTemplateMethod").run()
-TestCaseTest("testResult").run()
-TestCaseTest("testFailedResultFormatting").run()
-# TestCaseTest("testFailResult").run()
+print(TestCaseTest("testTemplateMethod").run().summary())
+print(TestCaseTest("testResult").run().summary())
+print(TestCaseTest("testFailedResult").run().summary())
+print(TestCaseTest("testFailedResultFormatting").run().summary())
