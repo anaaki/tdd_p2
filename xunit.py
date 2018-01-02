@@ -75,7 +75,7 @@ class TestCaseTest(TestCase):
         test.run(self.result)
         assert("1 run, 0 failed" == self.result.summary())
 
-    def testFailResult(self):
+    def testFailedResult(self):
         test = WasRun('testBrokenMethod')
         test.run(self.result)
         assert("1 run, 1 failed" == self.result.summary())
